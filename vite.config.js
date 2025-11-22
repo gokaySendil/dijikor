@@ -6,6 +6,7 @@ export default defineConfig({
   base: process.env.VITE_BASE_PATH ||"/dijikor",
   plugins: [
     react({
+      include: /\.(jsx?|tsx?)$/,
       babel: {
         plugins: [['babel-plugin-react-compiler']],
         
